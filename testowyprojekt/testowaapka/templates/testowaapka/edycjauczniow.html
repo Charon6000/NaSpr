@@ -1,0 +1,13 @@
+{% extends "testowaapka/szablon.html" %}
+{% block tutyl %}Edytuj ucznia{% endblock %}
+{% block zawartosc %}
+    <form action="" method="post">
+        <ul>
+          {% csrf_token %}
+          <li>Imie: <input type="text" name="imie" value="{{form.imie}}"></li>
+          <li>Nazwisko: <input type="text" name="nazwisko" value="{{form.nazwisko}}"></li>
+          <li>Klasa: <input type="number" name="klasa" value="{{form.klasa}}"></li>
+        </ul>
+        <input type="submit" value="Edytuj">
+    </form>
+{% endblock %}

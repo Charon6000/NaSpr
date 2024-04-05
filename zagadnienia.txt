@@ -1,0 +1,21 @@
+Django:
+- tworzenie projektu/aplikacji
+    python -m venv venv
+    Set-ExecutionPolicy RemoteSigned -Scope Process
+    \venv\Scripts\activate 
+    python -m pip install --upgrade pip
+    pip install django
+    django-admin startproject testowyprojekt
+    cd .\testowyprojekt\
+    python manage.py startapp testowaapka
+- tworzenie modeli (podstawowe pola oraz połączenia modeli)
+    python.exe .\manage.py makemigrations
+    python manage.py migrate
+    python manage.py createsuperuser
+- tworzenie widoków (za pomocą funkcji): m.in. lista rekardów, strona szczegółów
+- tworzenie szablonów, obsługa plików statycznych (obrazy, css, js), użycie głównego szablonu (extends)
+- zarządzanie danymi w panelu admina
+- formularze dodawania/edycji (ręcznie lub z użyciem Forms lub z użyciem ModelForms)//
+- usuwanie rekordów
+- Class Based Views (lista, strona szczegółów, formularze)
+- logowanie użytkowników, ograniczanie dostępu do zasobów tylko dla zalogowanych

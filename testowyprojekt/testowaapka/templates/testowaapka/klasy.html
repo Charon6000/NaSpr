@@ -1,0 +1,8 @@
+{% extends "testowaapka/szablon.html" %}
+{% block tytul %}Klasy{% endblock %}
+{% block zawartosc %}
+Klasy:
+{% for klasa in klasy %}
+    <p>{{klasa.id}} {{klasa.nazwa}}</p>
+{% endfor %}
+{% endblock %}

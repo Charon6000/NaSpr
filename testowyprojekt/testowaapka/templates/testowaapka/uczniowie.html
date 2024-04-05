@@ -1,0 +1,8 @@
+{% extends "testowaapka/szablon.html" %}
+{% block tytul %}Uczniowie{% endblock %}
+{% block zawartosc %}
+Uczniowie:
+{% for uczen in uczniowie %}
+    <p>{{uczen.id}} {{uczen.imie}} {{uczen.nazwisko}} {{uczen.klasa}}</p>
+{% endfor %}
+{% endblock %}

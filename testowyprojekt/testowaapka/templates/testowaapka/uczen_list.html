@@ -1,0 +1,11 @@
+{% extends "testowaapka/szablon.html" %}
+{% block tytul %}Bangladesz - Komentarze{% endblock %}
+
+{% block zawartosc %}
+Uczniowie:
+{% for object in object_list %}
+    <p>imie: {{object.imie}}</p>
+    <p>nazwisko: {{object.nazwisko}}</p>
+    <p>klasa: {{object.klasa}}</p>
+    {% endfor %}
+{% endblock %}
